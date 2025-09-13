@@ -27,7 +27,7 @@ export default function ApplyPage() {
   return (
     <div className='min-h-screen bg-white font-sans text-base leading-relaxed text-gray-700 selection:bg-blue-100 selection:text-blue-900'>
       {/* Mobile-Optimized Header */}
-      <header className='sticky top-0 z-50 border-b border-gray-200 bg-white/95 shadow-sm backdrop-blur-xl'>
+      <header className='fixed left-0 right-0 top-0 z-50 border-b border-gray-200 bg-white/95 shadow-sm backdrop-blur-xl'>
         <div className='mx-auto max-w-7xl px-3 py-2 sm:px-4 sm:py-3 md:px-8 md:py-4'>
           <div className='flex items-center justify-between gap-2'>
             {/* Back Navigation - Compact on mobile */}
@@ -71,7 +71,7 @@ export default function ApplyPage() {
       </header>
 
       {/* Mobile-Optimized Main Content */}
-      <main className='px-3 py-4 sm:px-4 sm:py-6 md:px-6 md:py-12 lg:py-16'>
+      <main className='px-3 py-4 pt-20 sm:px-4 sm:py-6 sm:pt-24 md:px-6 md:py-12 md:pt-28 lg:py-16'>
         <div className='mx-auto mb-4 max-w-4xl text-center sm:mb-6 md:mb-8'>
           <div className='mb-4 sm:mb-6'>
             <h1 className='text-4xl font-bold leading-tight text-gray-900 md:text-5xl lg:text-6xl xl:text-5xl'>

@@ -242,7 +242,7 @@ export default function SharePurchaseAgreement() {
   return (
     <div className='min-h-screen bg-white'>
       {/* Ultra-Compact Mobile Header */}
-      <header className='sticky top-0 z-50 border-b border-gray-200 bg-white/95 backdrop-blur-xl'>
+      <header className='fixed left-0 right-0 top-0 z-50 border-b border-gray-200 bg-white/95 backdrop-blur-xl'>
         <div className='mx-auto max-w-7xl px-3 py-2 sm:px-4 sm:py-3 md:py-4'>
           {/* Hyper-compact header layout for mobile */}
           <div className='flex items-center justify-between'>
@@ -312,7 +312,7 @@ export default function SharePurchaseAgreement() {
         </div>
       </header>
 
-      <main className='mx-auto max-w-7xl px-3 py-3 sm:px-4 sm:py-4 md:py-6 lg:py-8'>
+      <main className='mx-auto max-w-7xl px-3 py-3 pt-20 sm:px-4 sm:py-4 sm:pt-24 md:py-6 md:pt-28 lg:py-8'>
         {/* Ultra-compact mobile layout */}
         <div className='flex flex-col gap-4 sm:gap-5 md:gap-6 lg:grid lg:grid-cols-12 lg:gap-8'>
           {/* Main Content Area - Mobile full width */}

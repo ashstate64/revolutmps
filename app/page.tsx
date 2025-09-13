@@ -244,7 +244,7 @@ export default function DigitalBrochurePage() {
 
   return (
     <div className='min-h-screen bg-white font-sans text-base leading-relaxed text-gray-700'>
-      <header className='sticky top-0 z-50 border-b border-gray-200 bg-white/95 shadow-sm backdrop-blur-xl'>
+      <header className='fixed left-0 right-0 top-0 z-50 border-b border-gray-200 bg-white/95 shadow-sm backdrop-blur-xl'>
         <div className='mx-auto max-w-7xl'>
           {/* Top notification bar - Mobile optimized */}
           <div className='border-b border-gray-200 bg-blue-50 px-2 py-1 text-center sm:px-4 sm:py-2'>
@@ -408,7 +408,7 @@ export default function DigitalBrochurePage() {
         </div>
       </header>
 
-      <div className='relative overflow-hidden bg-gradient-to-b from-gray-50 to-white'>
+      <div className='relative overflow-hidden bg-gradient-to-b from-gray-50 to-white pt-20 sm:pt-24 md:pt-28'>
         {/* Subtle professional background pattern */}
         <div className='bg-grid-pattern pointer-events-none absolute inset-0 opacity-5'></div>
 

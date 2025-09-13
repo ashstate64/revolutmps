@@ -72,6 +72,7 @@
 
   html {
     scroll-behavior: smooth;
+    scroll-padding-top: 6rem; /* Account for fixed header */
   }
 
   /* Better focus indicators */
@@ -237,5 +238,30 @@
     height: 100%;
     object-fit: contain;
     filter: contrast(1.1) saturate(1.05);
+  }
+
+  /* Mobile navigation fixes */
+  .mobile-nav-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    transform: translateZ(0); /* Force hardware acceleration */
+    -webkit-transform: translateZ(0);
+  }
+
+  /* Prevent content jumping on mobile */
+  .mobile-content-offset {
+    padding-top: env(safe-area-inset-top, 0px);
+  }
+
+  /* iOS Safari address bar handling */
+  @supports (-webkit-touch-callout: none) {
+    .mobile-nav-fixed {
+      position: -webkit-sticky;
+      position: sticky;
+      top: env(safe-area-inset-top, 0px);
+    }
   }
 }
