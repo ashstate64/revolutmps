@@ -964,75 +964,105 @@ export default function DigitalBrochurePage() {
 
       <footer className='mt-16 border-t border-gray-200 bg-gray-50 px-4 py-12 text-center md:mt-24 md:px-8'>
         <div className='mx-auto max-w-6xl text-gray-700'>
-          {/* Contact Information Grid */}
+          {/* Global Contact Information Grid */}
           <div className='mb-12 grid grid-cols-1 gap-8 md:grid-cols-3'>
-            {/* Primary Contact */}
-            <div className='rounded-lg border border-gray-200 bg-white p-6 shadow-sm'>
+            {/* North America Office */}
+            <div className='rounded-lg border border-blue-200 bg-blue-50/30 p-6 shadow-sm'>
               <h4 className='mb-4 text-lg font-semibold text-gray-900'>
-                Investment Inquiries
+                North America Centre
               </h4>
               <div className='space-y-3 text-sm'>
-                <p className='flex items-center justify-center md:justify-start'>
-                  <Mail className='mr-2 h-4 w-4 text-blue-600' />
-                  <a
-                    href='mailto:admin@mpsfc.com'
-                    className='text-gray-700 transition-colors hover:text-blue-600'
-                  >
-                    admin@mpsfc.com
-                  </a>
-                </p>
-                <p className='flex items-center justify-center md:justify-start'>
+                <div className='flex items-start'>
+                  <MapPin className='mr-2 mt-1 h-4 w-4 flex-shrink-0 text-blue-600' />
+                  <div className='text-gray-700'>
+                    <p className='font-medium'>
+                      North America Analytics and Research Centre
+                    </p>
+                    <p>15 MetroTech Center</p>
+                    <p>New York, NY 11201</p>
+                    <p className='mt-1 font-medium text-blue-600'>
+                      United States
+                    </p>
+                  </div>
+                </div>
+                <p className='flex items-center'>
                   <Phone className='mr-2 h-4 w-4 text-blue-600' />
                   <a
-                    href='tel:+61385779534'
+                    href='tel:+13473087378'
                     className='text-gray-700 transition-colors hover:text-blue-600'
+                  >
+                    +1 347 308 7378
+                  </a>
+                </p>
+              </div>
+            </div>
+
+            {/* European Office */}
+            <div className='rounded-lg border border-purple-200 bg-purple-50/30 p-6 shadow-sm'>
+              <h4 className='mb-4 text-lg font-semibold text-gray-900'>
+                European Centre
+              </h4>
+              <div className='space-y-3 text-sm'>
+                <div className='flex items-start'>
+                  <MapPin className='mr-2 mt-1 h-4 w-4 flex-shrink-0 text-purple-600' />
+                  <div className='text-gray-700'>
+                    <p className='font-medium'>
+                      European Analytics and Research Centre
+                    </p>
+                    <p>15 Westferry Circus</p>
+                    <p>Canary Wharf, London E14 4HD</p>
+                    <p className='mt-1 font-medium text-purple-600'>
+                      United Kingdom
+                    </p>
+                  </div>
+                </div>
+                <p className='flex items-center'>
+                  <Phone className='mr-2 h-4 w-4 text-purple-600' />
+                  <a
+                    href='tel:+442038071168'
+                    className='text-gray-700 transition-colors hover:text-purple-600'
+                  >
+                    +44 20 3807 1168
+                  </a>
+                </p>
+              </div>
+            </div>
+
+            {/* Australian Office (MPS Limited) */}
+            <div className='rounded-lg border border-green-200 bg-green-50/30 p-6 shadow-sm'>
+              <h4 className='mb-4 text-lg font-semibold text-gray-900'>
+                Australian Office
+              </h4>
+              <div className='space-y-3 text-sm'>
+                <div className='flex items-start'>
+                  <MapPin className='mr-2 mt-1 h-4 w-4 flex-shrink-0 text-green-600' />
+                  <div className='text-gray-700'>
+                    <p className='font-medium'>
+                      Managed Portfolio Services Limited
+                    </p>
+                    <p>Level 1, 800 Bourke Street</p>
+                    <p>Docklands, Victoria 3008</p>
+                    <p className='mt-1 font-medium text-green-600'>Australia</p>
+                  </div>
+                </div>
+                <p className='flex items-center'>
+                  <Phone className='mr-2 h-4 w-4 text-green-600' />
+                  <a
+                    href='tel:+61385779534'
+                    className='text-gray-700 transition-colors hover:text-green-600'
                   >
                     +61 3 8577 9534
                   </a>
                 </p>
-              </div>
-            </div>
-
-            {/* Office Address */}
-            <div className='rounded-lg border border-gray-200 bg-white p-6 shadow-sm'>
-              <h4 className='mb-4 text-lg font-semibold text-gray-900'>
-                Registered Office
-              </h4>
-              <div className='flex items-start justify-center text-sm md:justify-start'>
-                <MapPin className='mr-2 mt-1 h-4 w-4 flex-shrink-0 text-blue-600' />
-                <div className='text-gray-700'>
-                  <p className='font-medium'>
-                    Managed Portfolio Services Limited
-                  </p>
-                  <p>Level 1, 800 Bourke Street</p>
-                  <p>Docklands, Victoria 3008</p>
-                  <p className='mt-1 text-gray-500'>Australia</p>
-                </div>
-              </div>
-            </div>
-
-            {/* Investment Process */}
-            <div className='rounded-lg border border-gray-200 bg-white p-6 shadow-sm'>
-              <h4 className='mb-4 text-lg font-semibold text-gray-900'>
-                Investment Process
-              </h4>
-              <div className='space-y-2 text-sm text-gray-700'>
-                <div className='flex items-center'>
-                  <div className='mr-2 h-2 w-2 rounded-full bg-blue-600'></div>
-                  <span>Submit Application</span>
-                </div>
-                <div className='flex items-center'>
-                  <div className='mr-2 h-2 w-2 rounded-full bg-blue-600'></div>
-                  <span>Accreditation Verification</span>
-                </div>
-                <div className='flex items-center'>
-                  <div className='mr-2 h-2 w-2 rounded-full bg-blue-600'></div>
-                  <span>Investment Review</span>
-                </div>
-                <div className='flex items-center'>
-                  <div className='mr-2 h-2 w-2 rounded-full bg-blue-600'></div>
-                  <span>Documentation & Closing</span>
-                </div>
+                <p className='flex items-center'>
+                  <Mail className='mr-2 h-4 w-4 text-green-600' />
+                  <a
+                    href='mailto:admin@mpsfc.com'
+                    className='text-gray-700 transition-colors hover:text-green-600'
+                  >
+                    admin@mpsfc.com
+                  </a>
+                </p>
               </div>
             </div>
           </div>
@@ -1095,36 +1125,27 @@ export default function DigitalBrochurePage() {
             </div>
 
             {/* Mobile-First Grid Layout */}
-            <div className='grid gap-4 sm:gap-6 lg:grid-cols-2'>
-              {/* Left Column - Company Details */}
+            <div className='grid gap-4 sm:gap-6'>
+              {/* Global Offices */}
               <div className='space-y-4 sm:space-y-6'>
-                {/* Registered Office */}
-                <div className='rounded-lg border border-blue-200 bg-blue-50/30 p-4 sm:p-6'>
-                  <div className='mb-3 flex items-center sm:mb-4'>
-                    <MapPin className='mr-2 h-5 w-5 flex-shrink-0 text-blue-600' />
-                    <h4 className='text-base font-semibold text-gray-900 sm:text-lg'>
-                      Registered Office
-                    </h4>
-                  </div>
-                  <div className='space-y-1 text-sm text-gray-700'>
-                    <p className='font-medium leading-relaxed'>
-                      Level 1, 800 Bourke Street
-                    </p>
-                    <p className='leading-relaxed'>Docklands, Victoria 3008</p>
-                    <p className='font-medium text-blue-600'>Australia</p>
-                  </div>
-                </div>
+                <h4 className='text-lg font-semibold text-gray-900'>
+                  Global Offices
+                </h4>
 
-                {/* Contact Information */}
+                {/* Australian Registered Office */}
                 <div className='rounded-lg border border-green-200 bg-green-50/30 p-4 sm:p-6'>
                   <div className='mb-3 flex items-center sm:mb-4'>
-                    <Phone className='mr-2 h-5 w-5 flex-shrink-0 text-green-600' />
-                    <h4 className='text-base font-semibold text-gray-900 sm:text-lg'>
-                      Contact Details
-                    </h4>
+                    <MapPin className='mr-2 h-5 w-5 flex-shrink-0 text-green-600' />
+                    <h5 className='text-base font-semibold text-gray-900 sm:text-lg'>
+                      Australian Registered Office
+                    </h5>
                   </div>
-                  <div className='space-y-3 text-sm text-gray-700'>
-                    {/* Phone - Mobile Clickable */}
+                  <div className='space-y-2 text-sm text-gray-700'>
+                    <p className='font-medium'>
+                      Managed Portfolio Services Limited
+                    </p>
+                    <p>Level 1, 800 Bourke Street</p>
+                    <p>Docklands, Victoria 3008, Australia</p>
                     <a
                       href='tel:+61385779534'
                       className='flex items-center rounded-md p-2 transition-colors hover:bg-green-100 active:bg-green-200'
@@ -1132,19 +1153,77 @@ export default function DigitalBrochurePage() {
                       <Phone className='mr-2 h-4 w-4 flex-shrink-0 text-green-600' />
                       <span className='font-medium'>+61 3 8577 9534</span>
                     </a>
-                    {/* Email - Mobile Clickable */}
+                  </div>
+                </div>
+
+                {/* North America Office */}
+                <div className='rounded-lg border border-blue-200 bg-blue-50/30 p-4 sm:p-6'>
+                  <div className='mb-3 flex items-center sm:mb-4'>
+                    <MapPin className='mr-2 h-5 w-5 flex-shrink-0 text-blue-600' />
+                    <h5 className='text-base font-semibold text-gray-900 sm:text-lg'>
+                      North America Analytics Centre
+                    </h5>
+                  </div>
+                  <div className='space-y-2 text-sm text-gray-700'>
+                    <p className='font-medium'>
+                      North America Analytics and Research Centre
+                    </p>
+                    <p>15 MetroTech Center</p>
+                    <p>New York, NY 11201, United States</p>
+                    <a
+                      href='tel:+13473087378'
+                      className='flex items-center rounded-md p-2 transition-colors hover:bg-blue-100 active:bg-blue-200'
+                    >
+                      <Phone className='mr-2 h-4 w-4 flex-shrink-0 text-blue-600' />
+                      <span className='font-medium'>+1 347 308 7378</span>
+                    </a>
+                  </div>
+                </div>
+
+                {/* European Office */}
+                <div className='rounded-lg border border-purple-200 bg-purple-50/30 p-4 sm:p-6'>
+                  <div className='mb-3 flex items-center sm:mb-4'>
+                    <MapPin className='mr-2 h-5 w-5 flex-shrink-0 text-purple-600' />
+                    <h5 className='text-base font-semibold text-gray-900 sm:text-lg'>
+                      European Analytics Centre
+                    </h5>
+                  </div>
+                  <div className='space-y-2 text-sm text-gray-700'>
+                    <p className='font-medium'>
+                      European Analytics and Research Centre
+                    </p>
+                    <p>15 Westferry Circus</p>
+                    <p>Canary Wharf, London E14 4HD, United Kingdom</p>
+                    <a
+                      href='tel:+442038071168'
+                      className='flex items-center rounded-md p-2 transition-colors hover:bg-purple-100 active:bg-purple-200'
+                    >
+                      <Phone className='mr-2 h-4 w-4 flex-shrink-0 text-purple-600' />
+                      <span className='font-medium'>+44 20 3807 1168</span>
+                    </a>
+                  </div>
+                </div>
+
+                {/* Primary Email Contact */}
+                <div className='rounded-lg border border-orange-200 bg-orange-50/30 p-4 sm:p-6'>
+                  <div className='mb-3 flex items-center sm:mb-4'>
+                    <Mail className='mr-2 h-5 w-5 flex-shrink-0 text-orange-600' />
+                    <h5 className='text-base font-semibold text-gray-900 sm:text-lg'>
+                      Investment Inquiries
+                    </h5>
+                  </div>
+                  <div className='space-y-2 text-sm text-gray-700'>
                     <a
                       href='mailto:admin@mpsfc.com'
-                      className='flex items-center rounded-md p-2 transition-colors hover:bg-green-100 active:bg-green-200'
+                      className='flex items-center rounded-md p-2 transition-colors hover:bg-orange-100 active:bg-orange-200'
                     >
-                      <Mail className='mr-2 h-4 w-4 flex-shrink-0 text-green-600' />
+                      <Mail className='mr-2 h-4 w-4 flex-shrink-0 text-orange-600' />
                       <span className='font-medium'>admin@mpsfc.com</span>
                     </a>
-                    {/* Business Hours */}
-                    <div className='mt-3 rounded-md bg-green-100/50 p-2'>
+                    <div className='rounded-md bg-orange-100/50 p-2'>
                       <p className='text-xs text-gray-600'>
                         <strong>Business Hours:</strong> Mon-Fri, 9 AM - 5 PM
-                        AEST
+                        (Local Time)
                       </p>
                     </div>
                   </div>

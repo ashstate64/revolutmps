@@ -166,16 +166,32 @@ export function ApplicationWizard() {
             </div>
           </div>
 
-          {/* Contact Information */}
+          {/* Global Contact Information */}
           <div className='border-t border-slate-700 pt-4 text-sm text-gray-400'>
-            <p className='mb-2'>Have questions? Contact our investment team:</p>
-            <div className='flex flex-col space-y-2 sm:flex-row sm:justify-center sm:space-x-6 sm:space-y-0'>
+            <p className='mb-3 text-center'>
+              Have questions? Contact our global investment team:
+            </p>
+            <div className='grid grid-cols-1 gap-2 sm:grid-cols-3 sm:gap-4'>
               <a
-                href='tel:+61385779534'
+                href='tel:+13473087378'
                 className='text-blue-400 transition-colors hover:text-blue-300'
               >
-                📞 +61 3 8577 9534
+                🇺🇸 +1 347 308 7378
               </a>
+              <a
+                href='tel:+442038071168'
+                className='text-purple-400 transition-colors hover:text-purple-300'
+              >
+                🇬🇧 +44 20 3807 1168
+              </a>
+              <a
+                href='tel:+61385779534'
+                className='text-green-400 transition-colors hover:text-green-300'
+              >
+                🇦🇺 +61 3 8577 9534
+              </a>
+            </div>
+            <div className='mt-2 text-center'>
               <a
                 href='mailto:admin@mpsfc.com'
                 className='text-blue-400 transition-colors hover:text-blue-300'

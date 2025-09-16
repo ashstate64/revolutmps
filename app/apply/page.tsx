@@ -126,30 +126,53 @@ export default function ApplyPage() {
       <footer className='border-t border-slate-800 bg-slate-900/95 px-4 py-8 text-center'>
         <div className='mx-auto max-w-6xl'>
           <div className='mb-6 grid grid-cols-1 gap-6 md:grid-cols-2'>
-            {/* Contact Info */}
+            {/* Global Contact Info */}
             <div className='rounded-lg bg-slate-800/40 p-4'>
               <h4 className='mb-3 text-lg font-semibold text-white'>
-                Need Help?
+                Global Support
               </h4>
-              <div className='space-y-2 text-sm'>
-                <p className='flex items-center justify-center md:justify-start'>
-                  <Phone className='mr-2 h-4 w-4 text-blue-400' />
+              <div className='space-y-3 text-sm'>
+                <div>
+                  <p className='mb-1 font-medium text-blue-400'>
+                    North America
+                  </p>
+                  <a
+                    href='tel:+13473087378'
+                    className='flex items-center text-gray-300 hover:text-blue-300'
+                  >
+                    <Phone className='mr-2 h-3 w-3' />
+                    +1 347 308 7378
+                  </a>
+                </div>
+                <div>
+                  <p className='mb-1 font-medium text-purple-400'>Europe</p>
+                  <a
+                    href='tel:+442038071168'
+                    className='flex items-center text-gray-300 hover:text-purple-300'
+                  >
+                    <Phone className='mr-2 h-3 w-3' />
+                    +44 20 3807 1168
+                  </a>
+                </div>
+                <div>
+                  <p className='mb-1 font-medium text-green-400'>Australia</p>
                   <a
                     href='tel:+61385779534'
-                    className='text-blue-400 hover:text-blue-300'
+                    className='flex items-center text-gray-300 hover:text-green-300'
                   >
+                    <Phone className='mr-2 h-3 w-3' />
                     +61 3 8577 9534
                   </a>
-                </p>
-                <p className='flex items-center justify-center md:justify-start'>
-                  <Mail className='mr-2 h-4 w-4 text-blue-400' />
+                </div>
+                <div className='border-t border-slate-700 pt-2'>
                   <a
                     href='mailto:admin@mpsfc.com'
-                    className='text-blue-400 hover:text-blue-300'
+                    className='flex items-center justify-center text-blue-400 hover:text-blue-300'
                   >
+                    <Mail className='mr-2 h-4 w-4' />
                     admin@mpsfc.com
                   </a>
-                </p>
+                </div>
               </div>
             </div>
 

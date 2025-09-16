@@ -47,7 +47,19 @@ This Next.js application provides accredited investors with access to exclusive 
 - **AFCA Member**: #10872
 - **Regulated by**: Australian Securities and Investments Commission (ASIC)
 
-**Contact**
+**Global Contact Information**
+
+**North America Analytics and Research Centre**
+
+- **Address**: 15 MetroTech Center, New York, NY 11201, United States
+- **Phone**: +1 347 308 7378
+
+**European Analytics and Research Centre**
+
+- **Address**: 15 Westferry Circus, Canary Wharf, London E14 4HD, United Kingdom
+- **Phone**: +44 20 3807 1168
+
+**Australian Registered Office (MPS Limited)**
 
 - **Address**: Level 1, 800 Bourke Street, Docklands, Victoria 3008, Australia
 - **Phone**: +61 3 8577 9534
