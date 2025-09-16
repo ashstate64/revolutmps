@@ -101,7 +101,7 @@ export default function DigitalBrochurePage() {
       icon: <TrendingUp className='mb-4 h-10 w-10 text-primary' />,
       title: 'Financial Performance: Exceptional Growth Trajectory',
       content:
-        "Revolut's financial metrics demonstrate extraordinary growth, with revenue scaling from $2.2B in 2023 to $42.7B in 2024. The company has filed for IPO and maintains a current market cap of $81.66B via Notice platform pricing, reflecting strong investor confidence and market validation.",
+        "Revolut's financial metrics demonstrate extraordinary growth, with revenue scaling from $1.17B in 2022 to $4.27B in 2024 TTM. The company has filed for IPO and maintains a current market cap of $81.66B via Notice platform pricing, reflecting strong investor confidence and market validation.",
       visuals: [
         {
           title: 'Valuation Growth Analysis',
@@ -113,13 +113,13 @@ export default function DigitalBrochurePage() {
           title: 'Revenue Projections & Monetization',
           component: <RevenueProjectionChart />,
           explanation:
-            'Revenue growth from $2.2B (2023) to $42.7B (2024) represents exceptional growth, driven by global expansion, new product launches, and increasing customer engagement across financial services.',
+            'Revenue growth from $1.17B (2022) to $4.27B (2024 TTM) represents exceptional 75%+ YoY growth, driven by global expansion, new product launches, and increasing customer engagement across financial services.',
         },
       ],
       stats: [
         { label: 'Current Market Cap', value: '$81.66 Billion' },
         { label: 'Total Capital Raised', value: '$1.70 Billion' },
-        { label: '2024 Revenue', value: '$42.7 Billion' },
+        { label: '2024 TTM Revenue', value: '$4.27 Billion' },
         { label: 'Customer Base', value: '45+ Million' },
       ],
     },
@@ -483,7 +483,7 @@ export default function DigitalBrochurePage() {
               <span className='sm:hidden'>
                 Join global institutions in Revolut&apos;s pre-IPO via Notice.{' '}
                 <strong className='text-gray-900'>$81.66B market cap</strong>{' '}
-                with <strong className='text-blue-600'>$42.7B revenue</strong>.
+                with <strong className='text-blue-600'>$4.27B revenue</strong>.
               </span>
               <span className='hidden sm:inline'>
                 Join global institutions investing in Revolut before its
@@ -496,7 +496,7 @@ export default function DigitalBrochurePage() {
                 with
                 <strong className='text-blue-600'>
                   {' '}
-                  $42.7B annual revenue
+                  $4.27B annual revenue
                 </strong>
                 .
               </span>
@@ -743,8 +743,8 @@ export default function DigitalBrochurePage() {
                               World-Class Institutional Backing
                             </h3>
                             <p className='mx-auto max-w-2xl text-lg text-gray-600'>
-                              Leading global investors backing Databricks&apos;
-                              mission with over $14.29 billion in funding
+                              Leading global investors backing Revolut&apos;s
+                              mission with over $1.70 billion in funding
                             </p>
                           </div>
 
@@ -807,7 +807,7 @@ export default function DigitalBrochurePage() {
                               </h4>
                               <p className='text-gray-600'>
                                 Other world-class institutions supporting
-                                Databricks
+                                Revolut
                               </p>
                             </div>
 

@@ -1,30 +1,30 @@
-# Databricks Pre-IPO Investment Platform
+# Revolut Pre-IPO Investment Platform
 
-A professional investment platform for Databricks pre-IPO opportunities, managed by Managed Portfolio Services Limited (MPS).
+A professional investment platform for Revolut pre-IPO opportunities, facilitated through Notice secondary market platform.
 
 ## 🚀 Overview
 
-This Next.js application provides accredited investors with access to exclusive Databricks pre-IPO investment opportunities. The platform features comprehensive company information, financial data, leadership profiles, and a complete investment application process.
+This Next.js application provides accredited investors with access to exclusive Revolut pre-IPO investment opportunities via Notice.co. The platform features comprehensive company information, financial data, institutional investor profiles, and a complete investment application process.
 
 ## 📊 Key Features
 
 ### Investment Information
 
-- **Current Stock Price**: $149.70
-- **Market Cap**: $100.44B
-- **Total Funding**: $14.29B
-- **TTM Revenue**: $3.82B
-- **Expected IPO**: 2025
+- **Current Stock Price**: $1,376.28 (Notice platform)
+- **Market Cap**: $81.66B
+- **Total Funding**: $1.70B
+- **2024 TTM Revenue**: $4.27B
+- **IPO Status**: Filed (NASDAQ: REVU)
 
 ### Platform Features
 
 - 🏢 **Professional Investment Portal**
 - 📱 **Mobile-Responsive Design**
-- 🔒 **ASIC Compliant & Secure**
+- 🔒 **Notice Platform Integration**
 - 💼 **Complete Application Process**
 - 📈 **Real-time Financial Data**
-- 👥 **Executive Team Profiles**
-- 🏛️ **Institutional Investor Backing**
+- 👥 **Institutional Investor Profiles**
+- 🏛️ **World-Class Investor Backing**
 
 ## 🏗️ Technical Stack
 
@@ -38,50 +38,39 @@ This Next.js application provides accredited investors with access to exclusive 
 - **Testing**: Jest, Playwright
 - **Deployment**: Vercel Ready
 
-## 🏢 Company Information
+## 🏢 Platform Information
 
-**Managed Portfolio Services Limited**
+**Notice, Inc. - Secondary Market Platform**
 
-- **AFSL**: 00233761
-- **ABN**: 77 009 549 697
-- **AFCA Member**: #10872
-- **Regulated by**: Australian Securities and Investments Commission (ASIC)
+- **Platform**: Notice.co
+- **Structure**: SPV and forward contracts
+- **Access**: Accredited investors only
+- **Broker Network**: 90+ partners worldwide
 
-**Global Contact Information**
+**Investment Features**
 
-**North America Analytics and Research Centre**
-
-- **Address**: 15 MetroTech Center, New York, NY 11201, United States
-- **Phone**: +1 347 308 7378
-
-**European Analytics and Research Centre**
-
-- **Address**: 15 Westferry Circus, Canary Wharf, London E14 4HD, United Kingdom
-- **Phone**: +44 20 3807 1168
-
-**Australian Registered Office (MPS Limited)**
-
-- **Address**: Level 1, 800 Bourke Street, Docklands, Victoria 3008, Australia
-- **Phone**: +61 3 8577 9534
-- **Email**: admin@mpsfc.com
+- Secondary market access to pre-IPO shares
+- Institutional-grade security and compliance
+- 30-60 day settlement periods
+- Indirect exposure via regulated structures
 
 ## 🎯 Investment Opportunity
 
-### Databricks Leadership Team
+### Revolut Company Profile
 
-- **Ali Ghodsi** - Co-founder & CEO
-- **Matei Zaharia** - Co-founder & Chief Technologist
-- **Reynold Xin** - Co-founder & Chief Architect
-- **Dave Conte** - Chief Financial Officer
-- **Naveen Rao** - VP of Generative AI
+- **Founded**: 2015
+- **Customers**: 45+ million across 38+ countries
+- **Services**: Digital banking, payments, crypto, wealth management
+- **Revenue Growth**: 75%+ YoY
+- **Global Expansion**: US, Japan, emerging markets
 
 ### Major Investors
 
-- Andreessen Horowitz (a16z)
-- Insight Partners
+- Tiger Global Management
+- Index Ventures
 - DST Global
-- GIC (Singapore)
-- WCM Investment Management
+- Ribbit Capital
+- SoftBank Vision Fund 2
 
 ## 🚀 Getting Started
 
@@ -94,8 +83,8 @@ This Next.js application provides accredited investors with access to exclusive 
 
 ```bash
 # Clone the repository
-git clone https://github.com/ashstate64/databricksmps.git
-cd databricksmps
+git clone https://github.com/ashstate64/revolutmps.git
+cd revolutmps
 
 # Install dependencies
 pnpm install
@@ -136,26 +125,26 @@ pnpm test:e2e     # Run Playwright E2E tests
 │   ├── sections/        # Page sections
 │   └── ui/              # UI components
 ├── public/               # Static assets
-│   ├── leadership/      # Executive photos
-│   └── logos/           # Investor logos
+│   ├── logos/           # Investor logos
+│   └── *.png, *.svg     # Revolut branding
 └── __tests__/           # Test files
 ```
 
 ## 🔒 Security & Compliance
 
-- **ASIC Regulated**: Compliant with Australian financial services regulations
+- **Notice Platform**: Regulated secondary market access
 - **Data Protection**: Secure handling of investor information
 - **Form Validation**: Comprehensive client and server-side validation
 - **HTTPS Only**: Secure data transmission
-- **Privacy Policy**: GDPR and Australian Privacy Act compliant
+- **Privacy Policy**: Global privacy compliance
 
-## 🌏 Australian Compliance
+## 🌏 Investment Structure
 
-- **Currency**: All amounts in AUD
-- **Regulations**: ASIC, AFCA compliant
-- **Investor Classification**: Wholesale client requirements
-- **Tax**: TFN collection for Australian tax compliance
-- **Geographic**: Australian states and territories supported
+- **Currency**: USD denominated
+- **Structure**: SPV and forward contracts via Notice
+- **Investor Classification**: Accredited investors only
+- **Settlement**: 30-60 day periods
+- **Access**: Indirect exposure only
 
 ## 📈 SEO & Performance
 
@@ -163,7 +152,7 @@ pnpm test:e2e     # Run Playwright E2E tests
 - **Mobile-First**: Responsive design for all devices
 - **Core Web Vitals**: Optimized loading and interactivity
 - **PWA Ready**: Progressive Web App capabilities
-- **Structured Data**: Rich snippets and social media optimization
+- **Open Graph**: Social media optimization
 
 ## 🤝 Contributing
 
@@ -171,14 +160,18 @@ This is a private investment platform. For development inquiries, please contact
 
 ## 📄 License
 
-This project is proprietary and confidential. All rights reserved by Managed Portfolio Services Limited.
+This project is proprietary and confidential. All rights reserved by Notice, Inc.
 
 ## ⚠️ Investment Disclaimer
 
-This investment involves substantial risk, including potential total loss of principal. Past performance does not guarantee future results. This opportunity is exclusively available to accredited investors as defined by securities regulations. Please read full disclosures and consult with your financial advisor before making investment decisions.
+**HIGH RISK INVESTMENT**: This investment involves substantial risk, including potential total loss of principal. Revolut shares are illiquid and may not be suitable for all investors. Private company investments carry additional risks including limited financial disclosure and potential dilution.
+
+**ACCREDITED INVESTORS ONLY**: This opportunity is exclusively available to accredited investors as defined by securities regulations. Indirect transfers only via SPV structures.
+
+**NOTICE PLATFORM**: All transactions facilitated through Notice.co secondary market platform. Platform does not guarantee execution or pricing.
 
 ---
 
-**© 2025 Managed Portfolio Services Limited**  
-AFSL 00233761 | ABN 77 009 549 697 | AFCA Member #10872  
-Regulated by the Australian Securities and Investments Commission (ASIC)
+**© 2025 Notice, Inc.**  
+Secondary Market Investment Platform  
+Serving Accredited Investors Globally

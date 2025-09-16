@@ -328,7 +328,7 @@ export default function SharePurchaseAgreement() {
                     </span>
                   </CardTitle>
                   <p className='text-sm text-gray-300 sm:text-base'>
-                    Configure your Databricks pre-IPO investment details with
+                    Configure your Revolut pre-IPO investment details with
                     confidence
                   </p>
                   <div className='mt-2 flex items-center gap-2 text-xs text-green-400'>
@@ -399,11 +399,13 @@ export default function SharePurchaseAgreement() {
                   <div className='grid grid-cols-3 gap-2 sm:gap-3 md:gap-4'>
                     <div className='rounded-md bg-slate-700/30 p-2 text-center sm:rounded-lg sm:p-3 md:p-4'>
                       <div className='text-lg font-bold text-green-400 sm:text-xl md:text-2xl'>
-                        $42.7B
+                        $4.27B
                       </div>
                       <div className='text-xs text-gray-300 sm:text-sm'>
                         <span className='sm:hidden'>2024 Revenue</span>
-                        <span className='hidden sm:inline'>2024 Revenue</span>
+                        <span className='hidden sm:inline'>
+                          2024 TTM Revenue
+                        </span>
                       </div>
                     </div>
                     <div className='rounded-md bg-slate-700/30 p-2 text-center sm:rounded-lg sm:p-3 md:p-4'>
@@ -833,7 +835,7 @@ export default function SharePurchaseAgreement() {
                           state: agreedToEndorsement,
                           setState: setAgreedToEndorsement,
                           label:
-                            'I understand Databricks has not endorsed this offering',
+                            'I understand Revolut has not endorsed this offering',
                         },
                         {
                           id: 'enhanced-risks',
