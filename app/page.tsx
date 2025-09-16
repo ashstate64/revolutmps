@@ -153,14 +153,14 @@ export default function DigitalBrochurePage() {
       majorHolders: [
         {
           name: 'Tiger Global',
-          logo: '/logos/tiger-global-logo.svg',
+          logo: '/logos/tiger-global-logo.avif',
           entry: 'Lead investor in Series E $800M round',
           stake: 'Significant growth investor',
           bgColor: 'bg-white',
         },
         {
           name: 'Index Ventures',
-          logo: '/logos/index-ventures-logo.svg',
+          logo: '/logos/index-ventures-logo.png',
           entry: 'Early investor and Series E participant',
           stake: 'Major institutional holder',
           bgColor: 'bg-white',
@@ -174,14 +174,14 @@ export default function DigitalBrochurePage() {
         },
         {
           name: 'Ribbit Capital',
-          logo: '/logos/ribbit-capital-logo.svg',
+          logo: '/logos/ribbit-capital-logo.png',
           entry: 'Early fintech specialist investor',
           stake: 'Fintech expertise backing',
           bgColor: 'bg-gray-100',
         },
         {
           name: 'SoftBank Vision Fund 2',
-          logo: '/logos/softbank-logo.svg',
+          logo: '/logos/softbank-logo.png',
           entry: 'Series E co-lead investor',
           stake: 'Major institutional backing',
           bgColor: 'bg-white',
