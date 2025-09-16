@@ -55,7 +55,7 @@ export default function SharePurchaseAgreement() {
   >(submitShareAgreement, null);
 
   // Investment calculations - memoized for performance
-  const sharePrice = 149.7;
+  const sharePrice = 1376.28;
   const minimumShares = useMemo(
     () => Math.ceil(10000 / sharePrice),
     [sharePrice]
@@ -133,8 +133,8 @@ export default function SharePurchaseAgreement() {
               Agreement Executed Successfully
             </CardTitle>
             <p className='text-green-600'>
-              Your Databricks Pre-IPO Share Purchase Agreement has been
-              digitally signed
+              Your Revolut Pre-IPO Share Purchase Agreement has been digitally
+              signed via Notice platform
             </p>
           </CardHeader>
           <CardContent className='p-8'>
@@ -247,21 +247,21 @@ export default function SharePurchaseAgreement() {
           {/* Hyper-compact header layout for mobile */}
           <div className='flex items-center justify-between'>
             <div className='flex items-center space-x-2 sm:space-x-3'>
-              <div className='mps-logo-container'>
+              <div className='revolut-icon-container'>
                 <Image
-                  src='/mps-logo.png'
-                  alt='MPS Limited Logo'
+                  src='/revolut-icon.svg'
+                  alt='Revolut Icon'
                   width={24}
                   height={24}
-                  className='mps-logo-image rounded-lg shadow-sm sm:h-8 sm:w-8 md:h-10 md:w-10'
+                  className='revolut-icon-image rounded-lg shadow-sm sm:h-8 sm:w-8 md:h-10 md:w-10'
                 />
               </div>
               <div>
                 <h1 className='text-sm font-bold text-gray-900 sm:text-base md:text-lg lg:text-xl'>
-                  Databricks Pre-IPO
+                  Revolut Pre-IPO
                 </h1>
                 <p className='text-xs text-gray-500 sm:text-sm'>
-                  $149.70/share
+                  $1,376.28/share
                 </p>
               </div>
             </div>
@@ -362,7 +362,7 @@ export default function SharePurchaseAgreement() {
                           style={{ fontSize: '16px' }} // Prevent zoom on iOS
                         />
                         <p className='mt-1 text-xs text-gray-500 sm:text-sm'>
-                          Minimum: CAD $10,000 (≈{minimumShares} shares)
+                          Minimum: AUD $10,000 (≈{minimumShares} shares)
                         </p>
                       </div>
 
@@ -399,18 +399,16 @@ export default function SharePurchaseAgreement() {
                   <div className='grid grid-cols-3 gap-2 sm:gap-3 md:gap-4'>
                     <div className='rounded-md bg-slate-700/30 p-2 text-center sm:rounded-lg sm:p-3 md:p-4'>
                       <div className='text-lg font-bold text-green-400 sm:text-xl md:text-2xl'>
-                        $100.44B
+                        $42.7B
                       </div>
                       <div className='text-xs text-gray-300 sm:text-sm'>
-                        <span className='sm:hidden'>Market Cap</span>
-                        <span className='hidden sm:inline'>
-                          Current Market Cap
-                        </span>
+                        <span className='sm:hidden'>2024 Revenue</span>
+                        <span className='hidden sm:inline'>2024 Revenue</span>
                       </div>
                     </div>
                     <div className='rounded-md bg-slate-700/30 p-2 text-center sm:rounded-lg sm:p-3 md:p-4'>
                       <div className='text-lg font-bold text-blue-400 sm:text-xl md:text-2xl'>
-                        T+2
+                        30-60d
                       </div>
                       <div className='text-xs text-gray-300 sm:text-sm'>
                         <span className='sm:hidden'>Settlement</span>
@@ -421,11 +419,13 @@ export default function SharePurchaseAgreement() {
                     </div>
                     <div className='rounded-md bg-slate-700/30 p-2 text-center sm:rounded-lg sm:p-3 md:p-4'>
                       <div className='text-lg font-bold text-purple-400 sm:text-xl md:text-2xl'>
-                        12mo
+                        SPV
                       </div>
                       <div className='text-xs text-gray-300 sm:text-sm'>
-                        <span className='sm:hidden'>Lock-up</span>
-                        <span className='hidden sm:inline'>Lock-up Period</span>
+                        <span className='sm:hidden'>Structure</span>
+                        <span className='hidden sm:inline'>
+                          Investment Structure
+                        </span>
                       </div>
                     </div>
                   </div>
@@ -468,14 +468,15 @@ export default function SharePurchaseAgreement() {
                       </h3>
                       <ul className='space-y-0.5 text-xs leading-relaxed text-gray-300 sm:space-y-1 sm:text-sm md:space-y-2'>
                         <li>
-                          • Purchase Databricks Class A Shares via CG Financial
-                          International
+                          • Purchase Revolut shares via Notice secondary market
+                          platform
                         </li>
                         <li>
-                          • Fixed price: USD $149.70/share ($100.44B market cap)
+                          • Current price: USD $1,376.28/share ($81.66B market
+                          cap)
                         </li>
                         <li>• USD denominated transactions</li>
-                        <li>• Legally binding digital execution</li>
+                        <li>• Indirect transfers only - SPV structure</li>
                       </ul>
                     </div>
 
@@ -485,10 +486,10 @@ export default function SharePurchaseAgreement() {
                         Settlement & Security
                       </h3>
                       <ul className='space-y-0.5 text-xs leading-relaxed text-gray-300 sm:space-y-1 sm:text-sm md:space-y-2'>
-                        <li>• T+2 business days settlement (USD wire)</li>
-                        <li>• Third-party trust account protection</li>
-                        <li>• 2-4 weeks Databricks ROFR compliance</li>
-                        <li>• Full refund + 2% if delivery fails (60 days)</li>
+                        <li>• 30-60 day settlement via Notice platform</li>
+                        <li>• Escrow protection through Notice brokers</li>
+                        <li>• Revolut ROFR compliance period</li>
+                        <li>• SPV or forward contract structure</li>
                       </ul>
                     </div>
 
@@ -498,13 +499,10 @@ export default function SharePurchaseAgreement() {
                         Legal & Compliance
                       </h3>
                       <ul className='space-y-0.5 text-xs leading-relaxed text-gray-300 sm:space-y-1 sm:text-sm md:space-y-2'>
-                        <li>• ASIC compliant under Corporations Act</li>
+                        <li>• Notice platform regulatory compliance</li>
                         <li>• Accredited investor requirement</li>
-                        <li>• 4-month hold + 12-month lock-up</li>
-                        <li>
-                          • Valid digital signatures (Electronic Transactions
-                          Act)
-                        </li>
+                        <li>• Illiquid investment with holding period</li>
+                        <li>• Valid digital signatures via Notice platform</li>
                       </ul>
                     </div>
 
@@ -517,9 +515,13 @@ export default function SharePurchaseAgreement() {
                         </strong>
                         <ul className='mt-2 space-y-1 text-xs leading-relaxed sm:text-sm'>
                           <li>• Substantial risk of total loss</li>
-                          <li>• Databricks may reject share transfer</li>
+                          <li>
+                            • Revolut may exercise ROFR and reject transfers
+                          </li>
                           <li>• No IPO guarantee or positive returns</li>
-                          <li>• Illiquid with no secondary market</li>
+                          <li>
+                            • Illiquid investment with limited exit options
+                          </li>
                         </ul>
                       </AlertDescription>
                     </Alert>
@@ -926,7 +928,9 @@ export default function SharePurchaseAgreement() {
                     </div>
                     <div className='flex justify-between text-xs sm:text-sm md:text-base'>
                       <span className='text-gray-300'>Price:</span>
-                      <span className='font-semibold text-white'>$149.70</span>
+                      <span className='font-semibold text-white'>
+                        $1,376.28
+                      </span>
                     </div>
                     <Separator className='bg-slate-600' />
                     <div className='flex justify-between'>

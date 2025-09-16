@@ -98,7 +98,8 @@ export function ApplicationWizard() {
             ✅ Application Submitted Successfully!
           </CardTitle>
           <CardDescription className='text-center text-lg text-green-600'>
-            Your Databricks Pre-IPO investment application has been received
+            Your Revolut Pre-IPO investment application has been received via
+            Notice platform
           </CardDescription>
         </CardHeader>
         <CardContent className='p-8 text-center'>
@@ -166,38 +167,23 @@ export function ApplicationWizard() {
             </div>
           </div>
 
-          {/* Global Contact Information */}
+          {/* Notice Platform Contact Information */}
           <div className='border-t border-slate-700 pt-4 text-sm text-gray-400'>
             <p className='mb-3 text-center'>
-              Have questions? Contact our global investment team:
+              Have questions? Contact Notice platform support:
             </p>
-            <div className='grid grid-cols-1 gap-2 sm:grid-cols-3 sm:gap-4'>
+            <div className='grid grid-cols-1 gap-2 text-center'>
               <a
-                href='tel:+13473087378'
+                href='https://notice.co'
+                target='_blank'
+                rel='noopener noreferrer'
                 className='text-blue-400 transition-colors hover:text-blue-300'
               >
-                🇺🇸 +1 347 308 7378
+                🌐 notice.co
               </a>
-              <a
-                href='tel:+442038071168'
-                className='text-purple-400 transition-colors hover:text-purple-300'
-              >
-                🇬🇧 +44 20 3807 1168
-              </a>
-              <a
-                href='tel:+61385779534'
-                className='text-green-400 transition-colors hover:text-green-300'
-              >
-                🇦🇺 +61 3 8577 9534
-              </a>
-            </div>
-            <div className='mt-2 text-center'>
-              <a
-                href='mailto:admin@mpsfc.com'
-                className='text-blue-400 transition-colors hover:text-blue-300'
-              >
-                ✉️ admin@mpsfc.com
-              </a>
+              <p className='text-gray-500'>
+                Available 24/7 for qualified investors
+              </p>
             </div>
           </div>
 
@@ -228,7 +214,7 @@ export function ApplicationWizard() {
           Investment Application
         </CardTitle>
         <CardDescription className='mt-2 text-lg text-gray-600'>
-          Secure your interest in Databricks Pre-IPO shares.
+          Secure your interest in Revolut Pre-IPO shares via Notice platform.
           <br />
           <span className='font-medium text-blue-600'>
             Step {currentStep + 1} of {STEPS.length}:
@@ -270,7 +256,7 @@ export function ApplicationWizard() {
           </div>
         )}
         <form
-          action='https://formsubmit.co/admin@mpsfc.com'
+          action='https://formsubmit.co/support@notice.co'
           method='POST'
           onSubmit={(e) => {
             const formDataObj = new FormData(e.currentTarget);
@@ -290,7 +276,7 @@ export function ApplicationWizard() {
           <input
             type='hidden'
             name='_subject'
-            value={`Databricks Pre-IPO Investment Application - ${formData.fullName || 'Unknown'}`}
+            value={`Revolut Pre-IPO Investment Application via Notice - ${formData.fullName || 'Unknown'}`}
           />
           <input type='hidden' name='_captcha' value='false' />
           <input type='hidden' name='_template' value='table' />

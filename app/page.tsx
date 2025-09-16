@@ -9,9 +9,6 @@ import { Separator } from '@/components/ui/separator';
 import { ValuationGrowthChart } from '@/components/charts/valuation-growth-chart';
 import { RevenueProjectionChart } from '@/components/charts/revenue-projection-chart';
 import { PeerComparisonChart } from '@/components/charts/peer-comparison-chart';
-import { FundingTimelineVertical } from '@/components/sections/funding-timeline-vertical';
-import { SecondaryMarketActivitySection } from '@/components/sections/secondary-market-activity-section';
-import { LeadershipSection } from '@/components/sections/leadership-section';
 // Removed: import { ApplicationWizard } from "@/components/application-form/application-wizard"
 import {
   TrendingUp,
@@ -28,8 +25,6 @@ import {
   MapPin,
   Menu,
   X,
-  FileText,
-  ShieldCheck,
   BarChart3,
 } from 'lucide-react';
 
@@ -91,14 +86,14 @@ export default function DigitalBrochurePage() {
     {
       id: 'opportunity',
       icon: <Lightbulb className='mb-4 h-10 w-10 text-primary' />,
-      title: 'Investment Thesis: The Databricks Opportunity',
+      title: 'Investment Thesis: The Revolut Opportunity',
       content:
-        'Databricks represents a once-in-a-generation investment opportunity in the data intelligence and AI sector. With revolutionary products like the Databricks Data Intelligence Platform, MLflow, and Delta Lake, the company has achieved unprecedented scale and market penetration, establishing itself as the undisputed leader in the rapidly expanding data and AI market.',
+        "Revolut represents a once-in-a-generation investment opportunity in the financial technology sector. With revolutionary products spanning digital banking, payments, crypto, and investment services, the company has achieved unprecedented scale and market penetration, establishing itself as Europe's leading fintech platform with global expansion.",
       points: [
-        'Market-leading data lakehouse technology with clear competitive moats and network effects',
-        'Exponential customer adoption: Over 10,000 customers with 150% net retention rate',
-        'Strategic partnerships with major cloud providers and enterprise customers like Apple, Disney, H&M',
-        'Experienced leadership team with proven track record in scaling enterprise technology companies',
+        'Market-leading fintech platform with comprehensive financial services ecosystem',
+        'Exponential customer growth: Over 45 million customers across 38+ countries',
+        'Strategic expansion into new markets including US, Japan, and emerging economies',
+        'Experienced leadership team with proven track record in scaling global fintech platforms',
       ],
     },
     {
@@ -106,47 +101,47 @@ export default function DigitalBrochurePage() {
       icon: <TrendingUp className='mb-4 h-10 w-10 text-primary' />,
       title: 'Financial Performance: Exceptional Growth Trajectory',
       content:
-        "Databricks' financial metrics demonstrate extraordinary growth, with revenue scaling from $1.9B in 2023 to a projected $3.82B TTM. The company's valuation has reached $62B in its latest funding round, with a current market cap of $100.44B, reflecting strong investor confidence and market validation.",
+        "Revolut's financial metrics demonstrate extraordinary growth, with revenue scaling from $2.2B in 2023 to $42.7B in 2024. The company has filed for IPO and maintains a current market cap of $81.66B via Notice platform pricing, reflecting strong investor confidence and market validation.",
       visuals: [
         {
           title: 'Valuation Growth Analysis',
           component: <ValuationGrowthChart />,
           explanation:
-            "Databricks' valuation trajectory shows consistent growth, reaching $62B in the latest funding round with a market cap premium of +62%. This growth demonstrates sustained investor confidence and market validation of the company's data intelligence leadership position.",
+            "Revolut's valuation trajectory shows consistent growth, reaching $33B in the latest funding round with a market cap premium of +147%. This growth demonstrates sustained investor confidence and market validation of the company's fintech leadership position.",
         },
         {
           title: 'Revenue Projections & Monetization',
           component: <RevenueProjectionChart />,
           explanation:
-            'Revenue growth from $800M (2021) to projected $3.82B (TTM) represents consistent 60%+ YoY growth, driven by enterprise data platform adoption, AI/ML workloads, and expanding customer base.',
+            'Revenue growth from $2.2B (2023) to $42.7B (2024) represents exceptional growth, driven by global expansion, new product launches, and increasing customer engagement across financial services.',
         },
       ],
       stats: [
-        { label: 'Current Market Cap', value: '$100.44 Billion' },
-        { label: 'Total Capital Raised', value: '$14.29 Billion' },
-        { label: 'TTM Revenue', value: '$3.82 Billion' },
-        { label: 'YoY Revenue Growth', value: '60%+' },
+        { label: 'Current Market Cap', value: '$81.66 Billion' },
+        { label: 'Total Capital Raised', value: '$1.70 Billion' },
+        { label: '2024 Revenue', value: '$42.7 Billion' },
+        { label: 'Customer Base', value: '45+ Million' },
       ],
     },
     {
       id: 'market-leadership',
       icon: <Target className='mb-4 h-10 w-10 text-primary' />,
-      title: 'Market Position: Dominant Data Intelligence Platform Leader',
+      title: 'Market Position: Dominant Fintech Platform Leader',
       content:
-        "Databricks maintains a commanding lead in the data intelligence sector, with a market capitalization that significantly exceeds traditional data companies. The company's technological superiority in data lakehouse architecture, extensive enterprise ecosystem, and first-mover advantages create sustainable competitive moats.",
+        "Revolut maintains a commanding lead in the fintech sector, with a market capitalization that significantly exceeds traditional financial services companies. The company's technological superiority in digital banking, comprehensive financial ecosystem, and first-mover advantages in multiple markets create sustainable competitive moats.",
       visuals: [
         {
           title: 'Competitive Landscape Analysis',
           component: <PeerComparisonChart />,
           explanation:
-            "Databricks' $100.44B market cap positions it competitively against industry leaders like Snowflake ($225B), Palantir ($158B), and Salesforce ($250B), demonstrating strong market positioning and investor confidence in the company's unified data and AI platform.",
+            "Revolut's $81.66B market cap positions it competitively against industry leaders in fintech and traditional banking, demonstrating strong market positioning and investor confidence in the company's comprehensive financial platform.",
         },
       ],
       points: [
-        'Leading position in the rapidly growing data lakehouse market',
-        'Comprehensive enterprise ecosystem with 10,000+ customers globally',
-        'Continuous innovation pipeline with acquisitions like MosaicML ($1.3B) and Tabular',
-        'Strong partnerships with AWS, Azure, and Google Cloud Platform',
+        'Leading position in the rapidly growing fintech market',
+        'Comprehensive financial ecosystem with 45+ million customers globally',
+        'Continuous innovation pipeline with new products and market expansion',
+        'Strong partnerships with major financial institutions and payment networks',
       ],
     },
     {
@@ -154,65 +149,65 @@ export default function DigitalBrochurePage() {
       icon: <UsersRound className='mb-4 h-10 w-10 text-primary' />,
       title: 'Institutional Backing: World-Class Investor Portfolio',
       content:
-        "Databricks' investor base includes the world's most sophisticated technology and financial institutions. With $14.29 billion in total funding, the company has attracted backing from Andreessen Horowitz, Insight Partners, DST, GIC, and other premier investment firms, providing both capital and strategic value.",
+        "Revolut's investor base includes the world's most sophisticated technology and financial institutions. With $1.70 billion in total funding, the company has attracted backing from Tiger Global, Index Ventures, DST, Ribbit Capital, and other premier investment firms, providing both capital and strategic value.",
       majorHolders: [
         {
-          name: 'Andreessen Horowitz',
-          logo: '/logos/a16z-logo.svg',
-          entry: 'Lead investor across multiple rounds including Series J',
-          stake: 'Significant early investor',
+          name: 'Tiger Global',
+          logo: '/logos/tiger-global-logo.svg',
+          entry: 'Lead investor in Series E $800M round',
+          stake: 'Significant growth investor',
           bgColor: 'bg-white',
         },
         {
-          name: 'Insight Partners',
-          logo: '/logos/insight-partners-logo.svg',
-          entry: 'Co-led Series J $10.17B round in December 2024',
+          name: 'Index Ventures',
+          logo: '/logos/index-ventures-logo.svg',
+          entry: 'Early investor and Series E participant',
           stake: 'Major institutional holder',
           bgColor: 'bg-white',
         },
         {
           name: 'DST Global',
           logo: '/logos/dst-logo.svg',
-          entry: 'Co-led Series J and previous growth rounds',
+          entry: 'Series D and Series E co-investor',
           stake: 'Significant growth investor',
           bgColor: 'bg-gray-100',
         },
         {
-          name: 'GIC (Singapore)',
-          logo: '/logos/gic-logo.svg',
-          entry: 'Series J participant and long-term investor',
-          stake: 'Sovereign wealth fund backing',
+          name: 'Ribbit Capital',
+          logo: '/logos/ribbit-capital-logo.svg',
+          entry: 'Early fintech specialist investor',
+          stake: 'Fintech expertise backing',
           bgColor: 'bg-gray-100',
         },
         {
-          name: 'WCM Investment Management',
-          logo: '/logos/wcm-logo.svg',
-          entry: 'Series J co-investor',
-          stake: 'Institutional growth investor',
+          name: 'SoftBank Vision Fund 2',
+          logo: '/logos/softbank-logo.svg',
+          entry: 'Series E co-lead investor',
+          stake: 'Major institutional backing',
           bgColor: 'bg-white',
         },
         {
-          name: 'Additional Institutional Investors',
+          name: 'Additional Strategic Investors',
           logo: null,
           entry:
-            'Includes T. Rowe Price, BlackRock, Fidelity, NEA, Coatue, Battery Ventures',
+            'Includes Balderton Capital, TCV, Seedcamp, Point Nine Capital',
           stake: 'Combined institutional backing',
         },
       ],
       footerNote:
-        '*Ownership percentages are estimates based on disclosed funding rounds and may change following IPO. Source: Public filings and press releases.',
+        '*Ownership percentages are estimates based on disclosed funding rounds and may change following IPO. Source: Public filings and press releases. Trading via Notice platform.',
     },
     {
       id: 'ipo-path',
       icon: <Landmark className='mb-4 h-10 w-10 text-primary' />,
-      title: 'Path to Liquidity: Strategic IPO Preparation',
+      title: 'IPO Filed: Path to Public Markets',
       content:
-        'Databricks is strategically positioning for public markets with strong financial performance and governance optimization. The company has established a solid foundation with consistent revenue growth, strong unit economics, and expanding market leadership, setting the stage for a successful public debut.',
+        'Revolut has officially filed for IPO with plans to list on NASDAQ under ticker symbol REVU. The company has demonstrated exceptional financial performance and global scale, with $42.7B in revenue and 45+ million customers, positioning it for a successful public debut.',
       points: [
-        'Strong financial metrics with 60%+ revenue growth and improving unit economics',
-        'Recent $10.17B Series J round demonstrates strong institutional demand and IPO readiness',
-        'Established enterprise customer base with 150% net retention rate providing revenue visibility',
-        'Strategic market position in high-growth data intelligence and AI sectors',
+        'IPO filed for NASDAQ listing under ticker symbol REVU',
+        'Exceptional 2024 performance with $42.7B revenue demonstrates market readiness',
+        'Global customer base of 45+ million users across 38+ countries',
+        'Strong competitive position in high-growth fintech and digital banking sectors',
       ],
     },
     {
@@ -220,12 +215,12 @@ export default function DigitalBrochurePage() {
       icon: <DollarSign className='mb-4 h-10 w-10 text-primary' />,
       title: 'Investment Rationale: Compelling Value Proposition',
       content:
-        'Pre-IPO investment in Databricks offers accredited investors exposure to the defining data intelligence company of the AI era. With limited liquidity events in the enterprise data sector, this opportunity provides early access to a market leader before public market availability.',
+        'Pre-IPO investment in Revolut via Notice platform offers accredited investors exposure to the defining fintech company of the digital banking era. With limited liquidity events in the fintech sector, this opportunity provides early access to a market leader before public market availability.',
       benefits: [
-        'Exceptional growth potential in the rapidly expanding data intelligence and AI market',
-        'Pre-IPO pricing advantage with current stock price of $149.70 and potential upside',
-        'Portfolio diversification into transformative data lakehouse and AI technology',
-        'Limited availability - exclusive access for qualified accredited investors only',
+        'Exceptional growth potential in the rapidly expanding fintech and digital banking market',
+        'Pre-IPO pricing advantage with current stock price of $1,376.28 via Notice platform',
+        'Portfolio diversification into transformative fintech and financial technology',
+        'Limited availability - exclusive access for qualified accredited investors via Notice',
       ],
     },
   ];
@@ -233,10 +228,7 @@ export default function DigitalBrochurePage() {
   const orderedSections = [
     sections.find((s) => s.id === 'opportunity'),
     sections.find((s) => s.id === 'growth'),
-    { id: 'funding-timeline', component: <FundingTimelineVertical /> },
-    { id: 'secondary-market', component: <SecondaryMarketActivitySection /> },
     sections.find((s) => s.id === 'market-leadership'),
-    { id: 'leadership', component: <LeadershipSection /> },
     sections.find((s) => s.id === 'investors'),
     sections.find((s) => s.id === 'ipo-path'),
     sections.find((s) => s.id === 'why-invest'),
@@ -266,13 +258,13 @@ export default function DigitalBrochurePage() {
           <div className='flex items-center justify-between px-3 py-2 sm:px-4 sm:py-4 md:px-8'>
             {/* Enhanced Brand Identity with Trust Badges - Mobile optimized */}
             <div className='flex items-center space-x-2 sm:space-x-4'>
-              <div className='mps-logo-container'>
+              <div className='revolut-icon-container'>
                 <Image
-                  src='/mps-logo.png'
-                  alt='MPS Limited Logo'
+                  src='/revolut-icon.svg'
+                  alt='Revolut Icon'
                   width={40}
                   height={32}
-                  className='mps-logo-image rounded-lg object-contain shadow-sm sm:h-10 md:h-10'
+                  className='revolut-icon-image rounded-lg object-contain shadow-sm sm:h-10 md:h-10'
                   style={{ width: 'auto', maxWidth: '120px' }}
                   priority
                 />
@@ -281,11 +273,11 @@ export default function DigitalBrochurePage() {
               <div className='flex space-x-2'>
                 <div className='flex items-center rounded-full border border-green-200 bg-green-100 px-3 py-1 text-sm font-medium text-green-700'>
                   <ShieldAlert className='mr-1 h-3 w-3' />
-                  <span className='hidden sm:inline'>ASIC </span>Regulated
+                  <span className='hidden sm:inline'>Notice </span>Platform
                 </div>
                 <div className='flex items-center rounded-full border border-blue-200 bg-blue-100 px-3 py-1 text-sm font-medium text-blue-700'>
                   <Landmark className='mr-1 h-3 w-3' />
-                  <span className='hidden sm:inline'>Australian </span>AFSL
+                  <span className='hidden sm:inline'>Secondary </span>Market
                 </div>
               </div>
             </div>
@@ -419,8 +411,8 @@ export default function DigitalBrochurePage() {
               <div className='flex items-center rounded-full border border-green-200 bg-green-100 px-3 py-1 text-sm font-medium text-green-700'>
                 <ShieldAlert className='mr-1 h-3 w-3 sm:mr-2 sm:h-4 sm:w-4' />
                 <span className='text-xs font-medium sm:text-sm'>
-                  <span className='sm:hidden'>ASIC</span>
-                  <span className='hidden sm:inline'>ASIC Compliant</span>
+                  <span className='sm:hidden'>Notice</span>
+                  <span className='hidden sm:inline'>Notice Platform</span>
                 </span>
               </div>
               <div className='flex items-center rounded-full border border-blue-200 bg-blue-100 px-3 py-1 text-sm font-medium text-blue-700'>
@@ -441,15 +433,15 @@ export default function DigitalBrochurePage() {
               </div>
             </div>
 
-            {/* Databricks Logo - Mobile optimized */}
+            {/* Revolut Logo - Mobile optimized */}
             <div className='mb-4 flex justify-center sm:mb-6 md:mb-8'>
-              <div className='databricks-logo-hero-container'>
+              <div className='revolut-logo-hero-container'>
                 <Image
-                  src='/databricks-logo.svg'
-                  alt='Databricks Logo'
-                  width={96}
-                  height={96}
-                  className='databricks-logo-image object-contain sm:h-24 sm:w-24 md:h-32 md:w-32'
+                  src='/revolut-logo.png'
+                  alt='Revolut Logo'
+                  width={200}
+                  height={80}
+                  className='revolut-logo-image object-contain sm:h-24 sm:w-auto md:h-32 md:w-auto'
                   style={{
                     filter: 'drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1))',
                   }}
@@ -463,10 +455,10 @@ export default function DigitalBrochurePage() {
               <div className='rounded-lg bg-blue-50 px-2.5 py-1.5 sm:rounded-xl sm:px-6 sm:py-3'>
                 <p className='text-sm font-bold text-blue-700 sm:text-base'>
                   <span className='sm:hidden'>
-                    ● Databricks Pre-IPO • $149.70
+                    ● Revolut Pre-IPO • $1,376.28
                   </span>
                   <span className='hidden sm:inline'>
-                    ● Exclusive Pre-IPO Investment Opportunity • $149.70 Stock
+                    ● Exclusive Pre-IPO Investment Opportunity • $1,376.28 Stock
                     Price
                   </span>
                 </p>
@@ -475,12 +467,12 @@ export default function DigitalBrochurePage() {
 
             {/* Main Headline with Enhanced Typography - Mobile optimized */}
             <h1 className='mb-4 text-5xl font-bold leading-tight text-gray-900 sm:mb-6 sm:text-6xl md:mb-8 md:text-7xl lg:text-8xl'>
-              <span className='sm:hidden'>Invest in Data</span>
+              <span className='sm:hidden'>Invest in Fintech</span>
               <span className='hidden sm:inline'>Invest in the </span>
               <span className='relative text-blue-600'>
-                <span className='sm:hidden'>Intelligence</span>
+                <span className='sm:hidden'>Revolution</span>
                 <span className='hidden sm:inline'>
-                  Future of Data Intelligence
+                  Future of Financial Technology
                 </span>
                 <div className='absolute -bottom-1 left-0 h-0.5 w-full bg-blue-600 opacity-60 sm:-bottom-2 sm:h-1'></div>
               </span>
@@ -489,21 +481,24 @@ export default function DigitalBrochurePage() {
             {/* Enhanced Description - Mobile optimized */}
             <p className='mx-auto mb-6 max-w-2xl text-xl leading-relaxed text-gray-700 sm:mb-8 sm:max-w-3xl sm:text-2xl md:mb-10 md:text-3xl lg:text-4xl'>
               <span className='sm:hidden'>
-                Join global institutions in Databricks&apos; pre-IPO.{' '}
-                <strong className='text-gray-900'>$100.44B market cap</strong>{' '}
-                with{' '}
-                <strong className='text-blue-600'>$3.82B TTM revenue</strong>.
+                Join global institutions in Revolut&apos;s pre-IPO via Notice.{' '}
+                <strong className='text-gray-900'>$81.66B market cap</strong>{' '}
+                with <strong className='text-blue-600'>$42.7B revenue</strong>.
               </span>
               <span className='hidden sm:inline'>
-                Join global institutions investing in Databricks before its
-                anticipated IPO.
+                Join global institutions investing in Revolut before its
+                anticipated IPO via Notice platform.
                 <br className='hidden md:inline' />
                 <strong className='text-gray-900'>
                   {' '}
-                  $100.44B market cap
+                  $81.66B market cap
                 </strong>{' '}
                 with
-                <strong className='text-blue-600'> $3.82B TTM revenue</strong>.
+                <strong className='text-blue-600'>
+                  {' '}
+                  $42.7B annual revenue
+                </strong>
+                .
               </span>
             </p>
 
@@ -511,21 +506,21 @@ export default function DigitalBrochurePage() {
             <div className='mb-6 grid grid-cols-3 gap-2 sm:mb-8 sm:gap-4 md:mb-12 md:gap-6'>
               {[
                 {
-                  value: '$149.70',
+                  value: '$1,376.28',
                   label: 'Stock Price',
                   color: 'text-blue-600',
                   delay: 'delay-0',
                 },
                 {
-                  value: '$14.29B',
+                  value: '$1.70B',
                   label: 'Total Funding Raised',
                   color: 'text-gray-700',
                   delay: 'delay-100',
                 },
                 {
-                  value: '2025',
-                  label: 'Expected IPO Timeline',
-                  color: 'text-gray-700',
+                  value: 'Filed',
+                  label: 'IPO Status',
+                  color: 'text-green-600',
                   delay: 'delay-200',
                 },
               ].map((metric, index) => (
@@ -623,25 +618,11 @@ export default function DigitalBrochurePage() {
             .filter(
               (item): item is NonNullable<typeof item> => item !== undefined
             )
-            .map((sectionItem) => {
-              if ('component' in sectionItem && sectionItem.component) {
-                return (
-                  <section
-                    key={sectionItem.id}
-                    id={sectionItem.id}
-                    className='scroll-mt-20'
-                  >
-                    {sectionItem.component}
-                  </section>
-                );
-              }
-
-              // Type guard to ensure we have a Section object
-              if (!('title' in sectionItem)) {
+            .map((section) => {
+              // Only render sections with titles (skip component-only sections)
+              if (!section || !('title' in section)) {
                 return null;
               }
-
-              const section = sectionItem;
               return (
                 <section
                   key={section.id}
@@ -889,15 +870,15 @@ export default function DigitalBrochurePage() {
                                 Total Institutional Investment
                               </h4>
                               <div className='text-5xl font-bold text-blue-600'>
-                                $14.29 Billion
+                                $1.70 Billion
                               </div>
                               <p className='text-base text-gray-600'>
-                                Raised across multiple funding rounds since 2013
+                                Raised across multiple funding rounds since 2015
                               </p>
                               <div className='flex items-center justify-center space-x-6 pt-2 text-sm text-gray-600'>
                                 <div className='text-center'>
                                   <div className='font-semibold text-gray-900'>
-                                    2013-2024
+                                    2015-2021
                                   </div>
                                   <div>Funding Period</div>
                                 </div>
@@ -909,7 +890,7 @@ export default function DigitalBrochurePage() {
                                 </div>
                                 <div className='text-center'>
                                   <div className='font-semibold text-gray-900'>
-                                    Series J
+                                    Series E
                                   </div>
                                   <div>Latest Round</div>
                                 </div>
@@ -1114,210 +1095,60 @@ export default function DigitalBrochurePage() {
             </p>
           </div>
 
-          {/* MPS Limited Information - Mobile Optimized */}
+          {/* Notice Platform Information - Mobile Optimized */}
           <div className='mb-10 rounded-lg border border-gray-200 bg-white p-4 shadow-sm sm:p-6 lg:p-8'>
             {/* Header */}
             <div className='mb-6 flex items-center sm:mb-8'>
               <Landmark className='mr-3 h-6 w-6 flex-shrink-0 text-blue-600' />
               <h3 className='text-lg font-semibold text-gray-900 sm:text-xl'>
-                Managed Portfolio Services Limited
+                Notice Platform
               </h3>
             </div>
 
-            {/* Mobile-First Grid Layout */}
-            <div className='grid gap-4 sm:gap-6'>
-              {/* Global Offices */}
-              <div className='space-y-4 sm:space-y-6'>
-                <h4 className='text-lg font-semibold text-gray-900'>
-                  Global Offices
+            {/* Notice Platform Information */}
+            <div className='text-center'>
+              <div className='mb-6 rounded-lg border border-blue-200 bg-blue-50/30 p-6'>
+                <h4 className='mb-3 text-lg font-semibold text-gray-900'>
+                  Secondary Market Trading Platform
                 </h4>
-
-                {/* Australian Registered Office */}
-                <div className='rounded-lg border border-green-200 bg-green-50/30 p-4 sm:p-6'>
-                  <div className='mb-3 flex items-center sm:mb-4'>
-                    <MapPin className='mr-2 h-5 w-5 flex-shrink-0 text-green-600' />
-                    <h5 className='text-base font-semibold text-gray-900 sm:text-lg'>
-                      Australian Registered Office
-                    </h5>
-                  </div>
-                  <div className='space-y-2 text-sm text-gray-700'>
-                    <p className='font-medium'>
-                      Managed Portfolio Services Limited
-                    </p>
-                    <p>Level 1, 800 Bourke Street</p>
-                    <p>Docklands, Victoria 3008, Australia</p>
-                    <a
-                      href='tel:+61385779534'
-                      className='flex items-center rounded-md p-2 transition-colors hover:bg-green-100 active:bg-green-200'
-                    >
-                      <Phone className='mr-2 h-4 w-4 flex-shrink-0 text-green-600' />
-                      <span className='font-medium'>+61 3 8577 9534</span>
-                    </a>
-                  </div>
-                </div>
-
-                {/* North America Office */}
-                <div className='rounded-lg border border-blue-200 bg-blue-50/30 p-4 sm:p-6'>
-                  <div className='mb-3 flex items-center sm:mb-4'>
-                    <MapPin className='mr-2 h-5 w-5 flex-shrink-0 text-blue-600' />
-                    <h5 className='text-base font-semibold text-gray-900 sm:text-lg'>
-                      North America Analytics Centre
-                    </h5>
-                  </div>
-                  <div className='space-y-2 text-sm text-gray-700'>
-                    <p className='font-medium'>
-                      North America Analytics and Research Centre
-                    </p>
-                    <p>15 MetroTech Center</p>
-                    <p>New York, NY 11201, United States</p>
-                    <a
-                      href='tel:+13473087378'
-                      className='flex items-center rounded-md p-2 transition-colors hover:bg-blue-100 active:bg-blue-200'
-                    >
-                      <Phone className='mr-2 h-4 w-4 flex-shrink-0 text-blue-600' />
-                      <span className='font-medium'>+1 347 308 7378</span>
-                    </a>
-                  </div>
-                </div>
-
-                {/* European Office */}
-                <div className='rounded-lg border border-purple-200 bg-purple-50/30 p-4 sm:p-6'>
-                  <div className='mb-3 flex items-center sm:mb-4'>
-                    <MapPin className='mr-2 h-5 w-5 flex-shrink-0 text-purple-600' />
-                    <h5 className='text-base font-semibold text-gray-900 sm:text-lg'>
-                      European Analytics Centre
-                    </h5>
-                  </div>
-                  <div className='space-y-2 text-sm text-gray-700'>
-                    <p className='font-medium'>
-                      European Analytics and Research Centre
-                    </p>
-                    <p>15 Westferry Circus</p>
-                    <p>Canary Wharf, London E14 4HD, United Kingdom</p>
-                    <a
-                      href='tel:+442038071168'
-                      className='flex items-center rounded-md p-2 transition-colors hover:bg-purple-100 active:bg-purple-200'
-                    >
-                      <Phone className='mr-2 h-4 w-4 flex-shrink-0 text-purple-600' />
-                      <span className='font-medium'>+44 20 3807 1168</span>
-                    </a>
-                  </div>
-                </div>
-
-                {/* Primary Email Contact */}
-                <div className='rounded-lg border border-orange-200 bg-orange-50/30 p-4 sm:p-6'>
-                  <div className='mb-3 flex items-center sm:mb-4'>
-                    <Mail className='mr-2 h-5 w-5 flex-shrink-0 text-orange-600' />
-                    <h5 className='text-base font-semibold text-gray-900 sm:text-lg'>
-                      Investment Inquiries
-                    </h5>
-                  </div>
-                  <div className='space-y-2 text-sm text-gray-700'>
-                    <a
-                      href='mailto:admin@mpsfc.com'
-                      className='flex items-center rounded-md p-2 transition-colors hover:bg-orange-100 active:bg-orange-200'
-                    >
-                      <Mail className='mr-2 h-4 w-4 flex-shrink-0 text-orange-600' />
-                      <span className='font-medium'>admin@mpsfc.com</span>
-                    </a>
-                    <div className='rounded-md bg-orange-100/50 p-2'>
-                      <p className='text-xs text-gray-600'>
-                        <strong>Business Hours:</strong> Mon-Fri, 9 AM - 5 PM
-                        (Local Time)
-                      </p>
-                    </div>
-                  </div>
-                </div>
+                <p className='mb-4 text-sm text-gray-700'>
+                  Notice.co provides institutional-grade secondary market access
+                  for pre-IPO investments
+                </p>
+                <a
+                  href='https://notice.co'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  className='inline-flex items-center rounded-md bg-blue-600 px-4 py-2 text-sm font-medium text-white hover:bg-blue-700'
+                >
+                  Visit Notice Platform
+                </a>
               </div>
 
-              {/* Right Column - Regulatory Information */}
-              <div className='space-y-4 sm:space-y-6'>
-                {/* Registration Numbers */}
-                <div className='rounded-lg border border-purple-200 bg-purple-50/30 p-4 sm:p-6'>
-                  <div className='mb-3 flex items-center sm:mb-4'>
-                    <FileText className='mr-2 h-5 w-5 flex-shrink-0 text-purple-600' />
-                    <h4 className='text-base font-semibold text-gray-900 sm:text-lg'>
-                      Registration Details
-                    </h4>
-                  </div>
-                  <div className='space-y-3'>
-                    <div className='flex items-center justify-between border-b border-purple-200/50 pb-2'>
-                      <span className='text-sm text-gray-600'>ABN:</span>
-                      <span className='text-sm font-semibold text-gray-900'>
-                        77 009 549 697
-                      </span>
-                    </div>
-                    <div className='flex items-center justify-between border-b border-purple-200/50 pb-2'>
-                      <span className='text-sm text-gray-600'>AFSL:</span>
-                      <span className='text-sm font-semibold text-gray-900'>
-                        00233761
-                      </span>
-                    </div>
-                    <div className='flex items-center justify-between'>
-                      <span className='text-sm text-gray-600'>AFCA:</span>
-                      <span className='text-sm font-semibold text-gray-900'>
-                        #10872
-                      </span>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Regulatory Compliance */}
-                <div className='rounded-lg border border-orange-200 bg-orange-50/30 p-4 sm:p-6'>
-                  <div className='mb-3 flex items-center sm:mb-4'>
-                    <ShieldCheck className='mr-2 h-5 w-5 flex-shrink-0 text-orange-600' />
-                    <h4 className='text-base font-semibold text-gray-900 sm:text-lg'>
-                      Regulatory Compliance
-                    </h4>
-                  </div>
-                  <div className='space-y-4 text-sm'>
-                    {/* ASIC Regulated */}
-                    <div className='flex items-start rounded-md bg-orange-100/50 p-3'>
-                      <div className='mr-2 mt-1 h-2 w-2 flex-shrink-0 rounded-full bg-orange-500'></div>
-                      <div className='min-w-0 flex-1'>
-                        <p className='font-medium text-gray-900'>
-                          ASIC Regulated
-                        </p>
-                        <p className='mt-1 text-xs leading-relaxed text-gray-600'>
-                          Australian Securities and Investments Commission
-                        </p>
-                      </div>
-                    </div>
-                    {/* AFCA Member */}
-                    <div className='flex items-start rounded-md bg-orange-100/50 p-3'>
-                      <div className='mr-2 mt-1 h-2 w-2 flex-shrink-0 rounded-full bg-orange-500'></div>
-                      <div className='min-w-0 flex-1'>
-                        <p className='font-medium text-gray-900'>AFCA Member</p>
-                        <p className='mt-1 text-xs leading-relaxed text-gray-600'>
-                          Australian Financial Complaints Authority
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+              <div className='text-sm text-gray-600'>
+                <p className='mb-2'>
+                  <strong>Platform Features:</strong> 90+ broker partners •
+                  Accredited investor verification • Secure transactions
+                </p>
+                <p>
+                  <strong>Investment Structure:</strong> Special Purpose
+                  Vehicles (SPVs) and forward contracts
+                </p>
               </div>
             </div>
           </div>
 
-          {/* Regulatory & Company Information - Mobile Optimized */}
-          <div className='mb-8 grid grid-cols-1 gap-6 text-sm text-gray-600 sm:grid-cols-2 lg:grid-cols-3'>
-            <div className='text-center sm:text-left'>
+          {/* Notice Platform Information - Mobile Optimized */}
+          <div className='mb-8 text-center text-sm text-gray-600'>
+            <div className='mx-auto max-w-2xl'>
               <p className='font-semibold text-gray-900'>
-                Managed Portfolio Services Limited
+                Notice, Inc. - Secondary Market Platform
               </p>
-              <p className='mt-1'>Financial Advisory Services</p>
-              <p className='mt-1'>Registered in Victoria, Australia</p>
-            </div>
-            <div className='text-center'>
-              <p className='font-medium'>
-                Regulated by: Australian Securities and Investments Commission
-              </p>
-              <p className='mt-1'>ABN: 77 009 549 697 • AFSL: 00233761</p>
-            </div>
-            <div className='text-center sm:col-span-2 lg:col-span-1 lg:text-right'>
-              <p className='font-medium'>AFCA: #10872</p>
-              <p className='mt-1'>
-                Additional disclosures available upon request
+              <p className='mt-1'>Pre-IPO Investment Trading Platform</p>
+              <p className='mt-1'>Serving Accredited Investors Globally</p>
+              <p className='mt-2'>
+                Platform facilitates indirect exposure via SPVs and forward
+                contracts
               </p>
             </div>
           </div>
@@ -1325,12 +1156,12 @@ export default function DigitalBrochurePage() {
           {/* Copyright & Final Disclaimers */}
           <div className='border-t border-gray-200 pt-8'>
             <p className='mb-2 text-sm text-gray-600'>
-              &copy; {new Date().getFullYear()} Managed Portfolio Services
-              Limited. All rights reserved.
+              &copy; {new Date().getFullYear()} Notice, Inc. All rights
+              reserved.
             </p>
             <p className='mb-4 text-xs text-gray-500'>
-              Databricks Pre-IPO Investment Information presented by Managed
-              Portfolio Services Limited. All information current as of{' '}
+              Revolut Pre-IPO Investment Information presented via Notice
+              platform. All information current as of{' '}
               {new Date().toLocaleDateString('en-US', {
                 month: 'long',
                 year: 'numeric',
@@ -1338,8 +1169,8 @@ export default function DigitalBrochurePage() {
               .
             </p>
             <p className='text-xs text-gray-600'>
-              Application submission does not guarantee allocation. Investment
-              opportunities are limited and subject to availability.
+              Investment opportunities are limited and subject to availability.
+              Indirect transfers only via SPV structures.
               <br className='hidden sm:inline' />
               This presentation contains forward-looking statements that involve
               risks and uncertainties.
