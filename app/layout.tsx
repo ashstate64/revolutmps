@@ -12,44 +12,41 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title:
-    'Databricks Pre-IPO Investment Opportunity | Invest in the Future of Data Intelligence',
+    'Revolut Pre-IPO Investment Opportunity | Invest in the Future of Fintech via Notice',
   description:
-    "Explore an exclusive opportunity to invest in Databricks' private placement pre-IPO shares. Learn about Databricks' market leadership, explosive growth, and path to becoming a publicly traded company. Join leading institutional investors in this transformative data intelligence investment.",
+    "Explore an exclusive opportunity to invest in Revolut's pre-IPO shares via Notice secondary market platform. Learn about Revolut's market leadership, explosive growth, and IPO filing. Join leading institutional investors in this transformative fintech investment.",
   keywords: [
-    'Databricks',
+    'Revolut',
     'pre-IPO',
     'investment',
-    'data intelligence',
-    'artificial intelligence',
-    'private placement',
-    'Databricks stock',
-    'invest in Databricks',
-    'data investment',
+    'fintech',
+    'digital banking',
+    'Notice platform',
+    'Revolut stock',
+    'invest in Revolut',
+    'fintech investment',
     'technology stocks',
-    'venture capital',
+    'secondary market',
     'institutional investment',
-    'data lakehouse',
-    'MLflow',
-    'machine learning',
-    'enterprise data',
-    'Apache Spark',
-    'Delta Lake',
-    'data analytics',
-    'big data',
-    'cloud computing',
-    'Australia investment',
-    'ASIC regulated',
+    'digital payments',
+    'cryptocurrency',
+    'wealth management',
+    'mobile banking',
+    'financial technology',
+    'NASDAQ REVU',
+    'IPO filed',
+    'Notice.co',
     'accredited investors',
-    'wholesale clients',
-    'Series J funding',
+    'SPV investment',
+    'Series E funding',
     'unicorn company',
     'IPO 2025',
-    'MPS Limited',
-    'AFSL',
+    'Tiger Global',
+    'Index Ventures',
   ],
-  authors: [{ name: 'Databricks Investment Team' }],
-  creator: 'Databricks Investment Team',
-  publisher: 'Databricks',
+  authors: [{ name: 'Notice Investment Team' }],
+  creator: 'Notice Investment Team',
+  publisher: 'Notice, Inc.',
   robots: {
     index: true,
     follow: true,
@@ -64,32 +61,32 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://databricks-investment.com',
+    url: 'https://revolut-investment.com',
     title:
-      'Databricks Pre-IPO Investment Opportunity | Invest in the Future of Data Intelligence',
+      'Revolut Pre-IPO Investment Opportunity | Invest in the Future of Fintech via Notice',
     description:
-      "Explore an exclusive opportunity to invest in Databricks' private placement pre-IPO shares. Join leading institutional investors in this transformative data intelligence investment.",
-    siteName: 'Databricks Investment Opportunity',
+      "Explore an exclusive opportunity to invest in Revolut's pre-IPO shares via Notice secondary market platform. Join leading institutional investors in this transformative fintech investment.",
+    siteName: 'Revolut Investment Opportunity',
     images: [
       {
-        url: '/databricks-logo.svg',
+        url: '/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'Databricks Pre-IPO Investment Opportunity',
+        alt: 'Revolut Pre-IPO Investment Opportunity via Notice Platform',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
     title:
-      'Databricks Pre-IPO Investment Opportunity | Invest in the Future of Data Intelligence',
+      'Revolut Pre-IPO Investment Opportunity | Invest in the Future of Fintech via Notice',
     description:
-      "Explore an exclusive opportunity to invest in Databricks' private placement pre-IPO shares. Join leading institutional investors in this transformative data intelligence investment.",
-    images: ['/databricks-logo.svg'],
-    creator: '@databricks',
+      "Explore an exclusive opportunity to invest in Revolut's pre-IPO shares via Notice secondary market platform. Join leading institutional investors in this transformative fintech investment.",
+    images: ['/og-image.png'],
+    creator: '@revolut',
   },
   alternates: {
-    canonical: 'https://databricks-investment.com',
+    canonical: 'https://revolut-investment.com',
   },
   category: 'Investment',
   classification: 'Investment Opportunity',
@@ -99,7 +96,7 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL('https://databricks-investment.com'),
+  metadataBase: new URL('https://revolut-investment.com'),
   icons: {
     icon: [
       {
@@ -129,12 +126,12 @@ export const metadata: Metadata = {
   },
   manifest: '/site.webmanifest',
   verification: {
-    google: 'databricks-investment-verification',
-    yandex: 'databricks-investment-yandex-verification',
-    yahoo: 'databricks-investment-yahoo-verification',
+    google: 'revolut-investment-verification',
+    yandex: 'revolut-investment-yandex-verification',
+    yahoo: 'revolut-investment-yahoo-verification',
     other: {
-      'msvalidate.01': 'databricks-investment-bing-verification',
-      'p:domain_verify': 'databricks-investment-pinterest-verification',
+      'msvalidate.01': 'revolut-investment-bing-verification',
+      'p:domain_verify': 'revolut-investment-pinterest-verification',
     },
   },
 };
@@ -193,11 +190,8 @@ export default function RootLayout({
         <meta name='msapplication-TileColor' content='#ffffff' />
 
         {/* Additional SEO */}
-        <meta name='application-name' content='Databricks Investment' />
-        <meta
-          name='apple-mobile-web-app-title'
-          content='Databricks Investment'
-        />
+        <meta name='application-name' content='Revolut Investment' />
+        <meta name='apple-mobile-web-app-title' content='Revolut Investment' />
         <meta name='apple-mobile-web-app-capable' content='yes' />
         <meta name='apple-mobile-web-app-status-bar-style' content='default' />
         <meta name='mobile-web-app-capable' content='yes' />
